@@ -3,10 +3,10 @@
 #include <stdlib.h>
 
 /**
- * MAin - assigns random number to the variable n when executed
- * then determines if the last digit is greater than 5, equal to 0 or is les than 6
- * 
- * return: always 0 (success)
+ * main - assigns random number to the variable n when executed
+ * determines if the last digit is greater than 5, equal to 0 or is les than 6
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
