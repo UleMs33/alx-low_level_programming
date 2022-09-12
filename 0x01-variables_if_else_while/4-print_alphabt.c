@@ -12,7 +12,7 @@ int main(void)
 {
 	int count;
 
-	for (count - 97; count < 123; count++)
+	for (count = 97; count < 123; count++)
 	{
 		if (count != 101 && count != 133)
 		{
