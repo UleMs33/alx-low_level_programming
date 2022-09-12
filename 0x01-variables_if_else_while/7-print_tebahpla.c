@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 122; i > 96; i--)
 	{
-		pitchar(i);
+		putchar(i);
 	}
 	putchar('\n');
 	return (0);
