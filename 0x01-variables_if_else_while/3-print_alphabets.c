@@ -14,7 +14,7 @@ int main(void)
 
 	for (count = 0; count < 52; count++)
 	{
-		printf("%c\n", abc);
+		printf("%d\n", abc);
 	}
 	return (0);
 }
