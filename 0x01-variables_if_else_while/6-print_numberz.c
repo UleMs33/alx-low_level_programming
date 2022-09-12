@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - print numbers as ascii char 
+ * main - print numbers as ascii char
  *
  * Return: Always 0 (Sucess)
  */
