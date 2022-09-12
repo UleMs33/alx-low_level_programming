@@ -10,8 +10,8 @@
 int main(void)
 {
 	char abc[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i = 0;
-	for (i < 26; i++)
+	int i;
+	for (i = 0; i < 26; i++)
 	{
 		putchar(abc[i]);
 	}
