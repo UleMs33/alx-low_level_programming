@@ -10,11 +10,12 @@
 int main(void)
 {
 	char abc[52] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	int count;
+	int i;
 
-	for (count = 0; count < 52; count++)
+	for (i = 0; i < 52; i++)
 	{
-		printf("%d\n", abc);
+		putchar(abc[i]);
 	}
+	putchar('\n');
 	return (0);
 }
