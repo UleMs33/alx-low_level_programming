@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * _islower - returns 1 if the input is a lower case character a,d 0 for all other
- * characters
+ * _islower - returns 1 if the input is a lower case character 
+ * and 0 for all other characters
+ *
+ * @c: The character in ASCII
  * 
  * Return: 1 for lower case, 0 for the rest
  */
