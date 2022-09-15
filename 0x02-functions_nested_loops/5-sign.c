@@ -8,7 +8,7 @@
  *
  * Return: 1 is greater, -1 is less than, 0 is zero
  */
-int printn_sign(int n)
+int print_sign(int n)
 {
 	if (n > 0)
 	{
