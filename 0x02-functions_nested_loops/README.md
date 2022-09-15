@@ -1,0 +1,1 @@
+ Project 0x02 teaches the concepts of functions and nested loops. The function prototype for each file is in the holberton.h header file. Also, the main.c files were used to test each program and ensure the correct output. Each file in this project is as follows:
