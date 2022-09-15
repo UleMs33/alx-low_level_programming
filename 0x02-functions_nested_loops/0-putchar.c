@@ -11,7 +11,7 @@ int main(void)
 	int count, ss;
 
 	ss = sizeof(str) / sizeof(int);
-	for (count = 0; count < ss; cout++)
+	for (count = 0; count < ss; count++)
 	{
 		_putchar(str[count]);
 	}
