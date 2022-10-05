@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 int prime_number(int n, int i);
 
