@@ -1,0 +1,1 @@
+finall getting to understand singly linked lists in programming.
