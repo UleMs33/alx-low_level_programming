@@ -1,45 +1,34 @@
-#include "main.h"
-
 /**
- * _atoi - Converts a string to an integer
- * @s: The string to convert
+ * _atoi - convert a string representation of an integer to an integer
  *
- * Return: The converted integer
+ * @s: string possibly containing an integer
+ *
+ * Return: first integer in string
  */
 int _atoi(char *s)
 {
-	int sign = 1;
-	int result = 0;
-	int i = 0;
+	int signs = 1;
+	unsigned int sum = 0;
+	int final = 0;
 
-	/* Skip leading whitespace characters */
-	while (s[i] == ' ' || (s[i] >= '\t' && s[i] <= '\r'))
-		i++;
-
-	/* Check for optional sign */
-	if (s[i] == '-' || s[i] == '+')
+	for (; *s != '\0'; s++)
 	{
-		if (s[i] == '-')
-			sign *= -1;
-		i++;
+		if (*s == '-')
+			signs *= -1;
+		else if (*s >= '0' && *s <= '9')
+			break;
+	}
+	while (*s >= '0' && *s <= '9')
+	{
+		sum *= 10;
+		sum += *s - '0';
+		s++;
 	}
 
-	/* Convert remaining digits to integer */
-	while (s[i] >= '0' && s[i] <= '9')
-	{
-		/* Check for integer overflow */
-		if (result > (INT_MAX / 10) || (result == (INT_MAX / 10) && (s[i] - '0') > (INT_MAX % 10)))
-		{
-			if (sign == 1)
-				return INT_MAX;
-			else
-				return INT_MIN;
-		}
+	if (signs == -1)
+		final = -sum;
+	else
+		final = sum;
 
-		result = (result * 10) + (s[i] - '0');
-		i++;
-	}
-
-	return result * sign;
+	return (final);
 }
-
